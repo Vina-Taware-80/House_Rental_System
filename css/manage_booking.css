@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background: #2C3E50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.sidebar li.active {
+    background: #1ABC9C;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.booking-table th, .booking-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.booking-table th {
+    background: #1ABC9C;
+    color: white;
+}
+
+.approve-btn, .reject-btn, .delete-btn {
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.approve-btn {
+    background: #27ae60;
+    color: white;
+}
+
+.reject-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.delete-btn {
+    background: #34495e;
+    color: white;
+}
+
+.approve-btn:hover, .reject-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+}
